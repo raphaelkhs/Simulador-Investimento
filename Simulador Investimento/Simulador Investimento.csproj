@@ -85,6 +85,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Simulador.pt-BR.resx">
+      <DependentUpon>Simulador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Simulador.resx">
       <DependentUpon>Simulador.cs</DependentUpon>
     </EmbeddedResource>

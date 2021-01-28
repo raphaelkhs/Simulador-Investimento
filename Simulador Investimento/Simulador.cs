@@ -221,9 +221,8 @@ namespace Simulador_Investimento
                         {
                             valorfinal += valorfinal * rendimento;
                         }
-                        lblvalor.Text = ("R$ " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal));
-                        lblvalor.Visible = true;
-                        lblTextovalor.Visible = true;
+                        MessageBox.Show("O valor final é de R$: " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal), "Resultado");
+                                               
                     }
 
                     else
@@ -232,9 +231,7 @@ namespace Simulador_Investimento
                         {
                             valorfinal += valorfinal * (rendimento / 12);
                         }
-                        lblvalor.Text = ("R$ " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal));
-                        lblvalor.Visible = true;
-                        lblTextovalor.Visible = true;
+                        MessageBox.Show("O valor final é de R$: " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal), "Resultado");                                              
                     }
 
                 }
@@ -251,9 +248,7 @@ namespace Simulador_Investimento
                         {
                             valorfinal += (valorfinal * rendimento) + valormensal;
                         }
-                        lblvalor.Text = ("R$ " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal));
-                        lblvalor.Visible = true;
-                        lblTextovalor.Visible = true;
+                        MessageBox.Show("O valor final é de R$: " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal), "Resultado");                                            
                     }
 
                     else
@@ -262,9 +257,7 @@ namespace Simulador_Investimento
                         {
                             valorfinal += (valorfinal * (rendimento / 12)) + valormensal;
                         }
-                        lblvalor.Text = ("R$ " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal));
-                        lblvalor.Visible = true;
-                        lblTextovalor.Visible = true;
+                        MessageBox.Show("O valor final é de R$: " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal), "Resultado");
                     }
                 }
             }
