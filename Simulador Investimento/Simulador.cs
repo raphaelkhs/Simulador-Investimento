@@ -222,7 +222,11 @@ namespace Simulador_Investimento
                             valorfinal += valorfinal * rendimento;
                         }
                         MessageBox.Show("O valor final é de R$: " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal), "Resultado");
-                                               
+
+                        txtInicial.Text = "R$ 0,00";
+                        txtMensal.Text = "R$ 0,00";
+                        txtRendimento.Clear();
+                        txtTempo.Clear();
                     }
 
                     else
@@ -231,7 +235,12 @@ namespace Simulador_Investimento
                         {
                             valorfinal += valorfinal * (rendimento / 12);
                         }
-                        MessageBox.Show("O valor final é de R$: " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal), "Resultado");                                              
+                        MessageBox.Show("O valor final é de R$: " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal), "Resultado");
+                        
+                        txtInicial.Text = "R$ 0,00";
+                        txtMensal.Text = "R$ 0,00";
+                        txtRendimento.Clear();
+                        txtTempo.Clear();
                     }
 
                 }
@@ -248,7 +257,12 @@ namespace Simulador_Investimento
                         {
                             valorfinal += (valorfinal * rendimento) + valormensal;
                         }
-                        MessageBox.Show("O valor final é de R$: " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal), "Resultado");                                            
+                        MessageBox.Show("O valor final é de R$: " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal), "Resultado");
+
+                        txtInicial.Text = "R$ 0,00";
+                        txtMensal.Text = "R$ 0,00";
+                        txtRendimento.Clear();
+                        txtTempo.Clear();
                     }
 
                     else
@@ -258,6 +272,11 @@ namespace Simulador_Investimento
                             valorfinal += (valorfinal * (rendimento / 12)) + valormensal;
                         }
                         MessageBox.Show("O valor final é de R$: " + string.Format(System.Globalization.CultureInfo.CurrentCulture, "{0:N}", valorfinal), "Resultado");
+
+                        txtInicial.Text = "R$ 0,00";
+                        txtMensal.Text = "R$ 0,00";
+                        txtRendimento.Clear();
+                        txtTempo.Clear();
                     }
                 }
             }
